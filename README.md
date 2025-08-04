@@ -1,13 +1,12 @@
 
 # StratusLite
 
-[![CI/CD Pipeline](https://imgs.search.brave.com/cTCm2HyCpNmt-EIT2IuwLj4_HPBJE7hqo4Nh1KG4Qvg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/aGFzaG5vZGUuY29t/L3Jlcy9oYXNobm9k/ZS9pbWFnZS91cGxv/YWQvdjE3MzQxMTk5/OTk1NzAvY2ZiZjMz/NzUtMWU5NS00MWRm/LWI1YjAtOGZiYjhi/ODI3ZjU5LnBuZw)
-[![.NET](https://imgs.search.brave.com/j-9cT-tZTwZmVPCbVVqMkgPgm1a-b14IWv3JQBTM3_c/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wb3Np/dGl3aXNlLmNvbS9i/bG9nL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIxLzEyL3dlYi1z/ZWN1cml0eS1wYXJ0/bmVyLTEuanBn)
+
 [![License](https://imgs.search.brave.com/lrHFCkavvtkuIQWv32Y_JSMGdQNe4ixD-9NLL7_MPqU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wZWF0/ZWFzZWEuZGUvYXNz/ZXRzL2ltYWdlcy9z/aGllbGRzLWlvLWV4/YW1wbGUtYmFkZ2Ut/YnVpbGQtcGFzc2lu/Zy1icmlnaHRncmVl/bi5wbmc)
 
 > A minimal but professional C#/.NET automation tool demonstrating process orchestration and cross-platform compatibility.
 
-## 🚀 Overview
+## Overview
 
 StratusLite is a lightweight automation tool built with C# and .NET 8 that showcases professional software development practices including:
 
@@ -17,7 +16,7 @@ StratusLite is a lightweight automation tool built with C# and .NET 8 that showc
 - **CI/CD Integration**: Self-testing pipeline using the tool itself (dogfooding)
 - **Clean Architecture**: Well-structured, testable, and maintainable code
 
-## 📋 Features
+## Features
 
 - **Two Core Automation Tasks**:
   - `build`: Executes `dotnet restore && dotnet build`
@@ -27,7 +26,7 @@ StratusLite is a lightweight automation tool built with C# and .NET 8 that showc
 - **Cross-Platform Shell Execution**: Adapts to Windows CMD and Unix Bash
 - **Comprehensive Testing**: Unit tests with xUnit framework
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
@@ -46,7 +45,7 @@ dotnet run -- build
 dotnet run -- test
 ```
 
-## 📖 Usage
+## Usage
 
 ### Command Syntax
 ```bash
@@ -71,18 +70,18 @@ dotnet run -- test
 ```
 StratusLite v1.0 - Automation Tool
 ===================================
-🔨 Starting build task...
-▶️  Executing: dotnet restore
+Starting build task...
+Executing: dotnet restore
   Determining projects to restore...
   Restored /path/to/StratusLite.csproj (in 1.2s)
-▶️  Executing: dotnet build
+Executing: dotnet build
   Building...
   StratusLite -> /path/to/bin/Debug/net8.0/StratusLite.dll
 
-✅ Task 'build' completed successfully!
+Task 'build' completed successfully!
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 ### Core Components
 
@@ -97,7 +96,7 @@ StratusLite v1.0 - Automation Tool
 - **Async/Await**: Non-blocking I/O operations
 - **Record Types**: Immutable result objects
 
-## 🧪 Testing
+## Testing
 
 The project includes comprehensive unit tests:
 
@@ -115,7 +114,7 @@ dotnet run -- test
 - Cross-platform compatibility
 - Invalid input handling
 
-## 🔄 CI/CD Pipeline
+## CI/CD Pipeline
 
 StratusLite includes a GitHub Actions workflow that demonstrates:
 
@@ -127,7 +126,7 @@ The pipeline runs on:
 - Push to `main` or `develop` branches
 - Pull requests to `main`
 
-## 🎯 Professional Highlights
+## Professional Highlights
 
 This project demonstrates several key software development skills:
 
@@ -147,14 +146,14 @@ This project demonstrates several key software development skills:
 - **Project Structure**: Professional .NET solution organization
 - **Version Control**: Git best practices with meaningful commits
 
-## 📊 Project Statistics
+## Project Statistics
 
 - **Core Logic**: ~50 lines of focused automation code
 - **Total Project**: ~200 lines including tests and documentation
 - **Dependencies**: Minimal - only .NET 8 and xUnit for testing
 - **Platforms**: Linux, Windows, macOS support verified
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
