@@ -123,25 +123,6 @@ The pipeline runs on:
 - Push to `main` or `develop` branches
 - Pull requests to `main`
 
-## Professional Highlights
-
-This project demonstrates several key software development skills:
-
-### Technical Skills
-- **C# Process Management**: Advanced use of `Process.Start` and async I/O
-- **Cross-Platform Development**: Runtime detection and shell adaptation
-- **Error Handling**: Comprehensive exception management and user feedback
-- **Unit Testing**: Test-driven development with xUnit framework
-
-### DevOps Skills
-- **CI/CD Pipeline**: GitHub Actions with multi-platform testing
-- **Dogfooding**: Using the tool to build and test itself
-- **Documentation**: Professional README with clear usage examples
-
-### Software Engineering
-- **Clean Code**: SOLID principles and readable implementation
-- **Project Structure**: Professional .NET solution organization
-- **Version Control**: Git best practices with meaningful commits
 
 ## Project Statistics
 
