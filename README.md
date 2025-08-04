@@ -1,9 +1,6 @@
 
 # StratusLite
 
-
-[![License](https://imgs.search.brave.com/lrHFCkavvtkuIQWv32Y_JSMGdQNe4ixD-9NLL7_MPqU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wZWF0/ZWFzZWEuZGUvYXNz/ZXRzL2ltYWdlcy9z/aGllbGRzLWlvLWV4/YW1wbGUtYmFkZ2Ut/YnVpbGQtcGFzc2lu/Zy1icmlnaHRncmVl/bi5wbmc)
-
 > A minimal but professional C#/.NET automation tool demonstrating process orchestration and cross-platform compatibility.
 
 ## Overview
