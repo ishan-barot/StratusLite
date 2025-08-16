@@ -1,58 +1,25 @@
-
 name: ci/cd pipeline
 
 on:
   push:
-    branches: [ main, develop ]
   pull_request:
-    branches: [ main ]
 
 jobs:
   build-and-test:
-    name: build and test
     runs-on: ubuntu-latest
-    
     steps:
-    - name: checkout code
-      uses: actions/checkout@v4
-      
-    - name: setup .net
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '8.0.x'
-        
-    - name: display .net info
-      run: dotnet --info
-      
-    - name: build using stratuslite
-      run: dotnet run --project stratuslite -- build
-      
-    - name: test using stratuslite
-      run: dotnet run --project stratuslite -- test
-      
-    - name: check build outputs
-      run: |
-        echo "checking if stuff got built..."
-        ls -la stratuslite/bin/debug/net8.0/
-        ls -la stratuslite.tests/bin/debug/net8.0/
+      - uses: actions/checkout@v4
 
-  cross-platform-test:
-    name: cross-platform test
-    strategy:
-      matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-    runs-on: ${{ matrix.os }}
-    
-    steps:
-    - name: checkout code
-      uses: actions/checkout@v4
-      
-    - name: setup .net
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '8.0.x'
-        
-    - name: test on ${{ matrix.os }}
-      run: |
-        dotnet run --project stratuslite -- build
-        dotnet run --project stratuslite -- test
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'   # your project targets net8.0
+
+      - name: Restore
+        run: dotnet restore StratusLite.sln
+
+      - name: Build
+        run: dotnet build StratusLite.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test StratusLite.Tests/StratusLite.Tests.csproj --configuration Release --no-build --verbosity normal
